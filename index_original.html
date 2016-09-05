@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="portfolio with project links ">
+    <meta name="author" content="modified from a udacity project made by Cameron Pittman">
+    <title>Heather Nuffer: Portfolio</title>
+    <style>
+    html {
+      font-size: 100%;
+      overflow-y: scroll;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: none;
+    }
+    body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
+    body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+
+    a { color: #12C; }
+    a:visited { color: #61C; }
+    a:focus { outline: thin dotted; }
+    a:hover, a:active { color: #c00; outline: 0; }
+
+    b, strong { font-weight: bold; }
+    pre, code { font-family: monospace, monospace; font-size: 1em; }
+    ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
+    img { border: 0; max-width: 100%; }
+
+    body { background: #fff; }
+    header, footer, .container { max-width: 45em; margin: 0 auto; }
+
+    header { padding: 0 0.5em; color: #C90B0B; }
+    header img { border-radius: 40px; float: left; }
+    header p { font-size:1.5em; font-weight: bold; padding-left: 4em;}
+    header p span { font-size: 0.8em; font-weight: normal;}
+
+    .hero { padding: 2em; background-color: #f8f8f8; font-size:1.2em;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+    }
+
+    .content { padding: 1em 1em; }
+    .content li { list-style-type: none; font-size: 1.1em;}
+    li img { float:left; padding-right: 1em; }
+    li p { font-size: 0.9em; font-style: italic; }
+
+    footer {
+      padding: 0 0.5em;
+      border-top: 1px solid #ccc;
+    }
+    footer span { float: right; font-style: italic; }
+
+    /* Smartphones (portrait) */
+    @media only screen and (max-width: 480px) {
+      body { font-size: 12px;}
+      header p { padding-left: 4.5em;}
+    }
+
+    </style>
+    <link href="css/print.css" media="print" rel="stylesheet">
+
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
+    <script async src="js/perfmatters.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="/"><img src="img/profilepic.jpg"></a>
+      <p>HEATHER NUFFER<br><span>Web Developer</span></p>
+    </header>
+
+    <div class="container">
+      <div class="hero">
+        <strong>I love programming and web development!</strong> I am currently working on a Front-End Web Development nanodegree
+        from <a href="https://www.udacity.com/" target="_new">Udacity</a>. Here are a few of my favorite projects.<br> Contact me: zzzuzz@gmail.com
+      </div>
+
+      <div class="content">
+        <ul>
+          <li>
+            <img src="img/arcade_img100.jpg">
+            <h3><a href="https://ethyl2.github.io/frontend-nanodegree-arcade-game/index.html">The Pocket-Sized Pest Quest</a></h3>
+            <p>I created a Frogger-style game for the Udacity course on HTML5 canvas and JavaScript object-oriented programming.
+              I customized the game with features that include an instructional modal, scoring and collectibles.</p>
+          </li>
+
+          <li>
+            <img src="img/chickens_tut100_bord.jpg">
+            <h3><a href="https://ethyl2.github.io/chickens-tutorial/">Beanbag Chickens Tutorial</a></h3>
+            <p>I designed and implemented a photo-rich tutorial on how to sew chicken beanbags.
+              I wrote detailed text so that a beginning sewer can successfully make this project.
+              I utilized Bootstrap for a responsive design.</p>
+          </li>
+
+          <li>
+            <img src="img/web_opt100_comp.png">
+            <h3><a href="https://ethyl2.github.io/udportfolio/">Website Performance Optimization</a></h3>
+            <p>This is the original porfolio from the website performance optimization project.
+            I was able to modify the given code to change its <a href="https://developers.google.com/speed/pagespeed/insights/"
+            target="_new">PageSpeed Insights</a> score from 75/100 to 95/100
+            through minification, compression, asynchronous loading of analytic JavaScript files, and
+            changing the main css file to be inline.</p>
+          </li>
+
+          <li>
+            <img src="img/art_port100.jpg">
+            <h3><a href="https://ethyl2.github.io/art_portfolio/">Art Portfolio</a></h3>
+            <p>I created an art portfolio site to feature artwork I made for an elementary volunteer art program using HTML, CSS, JavaScript with jQuery and Bootstrap.
+              I edited my images using GIMP to facilitate a responsive page.
+              I included Bootstrap modals to allow for more text and bigger images, without crowding the page.</p>
+          </li>
+        </ul>
+    </div>
+
+    <footer>
+      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+    </footer>
+
+    <script>
+      (function(w,g){w['GoogleAnalyticsObject']=g;
+      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+      // Optional TODO: replace with your Google Analytics profile ID.
+      ga('create', 'UA-XXXX-Y');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
